@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.henshin.moviedb/src-gen" creationIcons="false"
+    editDirectory="/org.henshin.moviedb.edit/src-gen" editorDirectory="/org.henshin.moviedb.editor/src-gen"
+    modelPluginID="org.henshin.moviedb" modelName="Moviedb" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>moviedb.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Moviedb" basePackage="org.henshin" disposableProviderFactory="true"
+      ecorePackage="moviedb.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="moviedb.ecore#//MovieType">
+      <genEnumLiterals ecoreEnumLiteral="moviedb.ecore#//MovieType/MOVIE"/>
+      <genEnumLiterals ecoreEnumLiteral="moviedb.ecore#//MovieType/TV"/>
+      <genEnumLiterals ecoreEnumLiteral="moviedb.ecore#//MovieType/VIDEO"/>
+      <genEnumLiterals ecoreEnumLiteral="moviedb.ecore#//MovieType/VIDEOGAME"/>
+    </genEnums>
+    <genClasses ecoreClass="moviedb.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Person/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference moviedb.ecore#//Person/movies"/>
+    </genClasses>
+    <genClasses ecoreClass="moviedb.ecore#//Couple">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference moviedb.ecore#//Couple/p1"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference moviedb.ecore#//Couple/p2"/>
+    </genClasses>
+    <genClasses ecoreClass="moviedb.ecore#//Actor"/>
+    <genClasses ecoreClass="moviedb.ecore#//Actress"/>
+    <genClasses ecoreClass="moviedb.ecore#//Group">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference moviedb.ecore#//Group/commonMovies"/>
+    </genClasses>
+    <genClasses ecoreClass="moviedb.ecore#//Movie">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Movie/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Movie/rating"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Movie/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Movie/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference moviedb.ecore#//Movie/persons"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

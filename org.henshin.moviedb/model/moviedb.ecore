@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="moviedb" nsURI="http://www.example.org/moviedb" nsPrefix="moviedb">
+  <eClassifiers xsi:type="ecore:EClass" name="Person">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="movies" upperBound="-1"
+        eType="#//Movie" eOpposite="#//Movie/persons"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Couple" eSuperTypes="#//Group">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="p1" eType="#//Person"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="p2" eType="#//Person"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MovieType">
+    <eLiterals name="MOVIE"/>
+    <eLiterals name="TV" value="1"/>
+    <eLiterals name="VIDEO" value="2"/>
+    <eLiterals name="VIDEOGAME" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//Person"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Actress" eSuperTypes="#//Person"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Group">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="commonMovies" upperBound="-1"
+        eType="#//Movie"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Movie">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rating" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="year" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//MovieType"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="persons" upperBound="-1"
+        eType="#//Person" eOpposite="#//Person/movies"/>
+  </eClassifiers>
+</ecore:EPackage>

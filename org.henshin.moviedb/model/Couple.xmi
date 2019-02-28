@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moviedb:Couple xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:moviedb="http://www.example.org/moviedb" xsi:schemaLocation="http://www.example.org/moviedb moviedb.ecore"/>

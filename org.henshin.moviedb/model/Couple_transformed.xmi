@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:moviedb="http://www.example.org/moviedb" xsi:schemaLocation="http://www.example.org/moviedb moviedb.ecore">
+  <moviedb:Couple/>
+  <moviedb:Actor name="a50" movies="/6 /9 /10 /7"/>
+  <moviedb:Actor name="a51" movies="/9 /6 /10 /7"/>
+  <moviedb:Actor name="a52" movies="/10 /7 /9"/>
+  <moviedb:Actress name="a53" movies="/7 /8 /10 /9"/>
+  <moviedb:Actress name="a54" movies="/8 /7 /10 /9"/>
+  <moviedb:Movie rating="50.0" persons="/1 /2"/>
+  <moviedb:Movie rating="53.0" persons="/1 /4 /5 /2 /3"/>
+  <moviedb:Movie rating="54.0" persons="/5 /4"/>
+  <moviedb:Movie rating="51.0" persons="/1 /2 /5 /4 /3"/>
+  <moviedb:Movie rating="52.0" persons="/1 /3 /5 /4 /2"/>
+  <moviedb:Actor name="a55" movies="/16 /19"/>
+  <moviedb:Actor name="a56" movies="/19 /16 /20"/>
+  <moviedb:Actress name="a57" movies="/20 /17 /19"/>
+  <moviedb:Actress name="a58" movies="/17 /18 /20"/>
+  <moviedb:Actress name="a59" movies="/18 /17"/>
+  <moviedb:Movie rating="55.0" persons="/11 /12"/>
+  <moviedb:Movie rating="58.0" persons="/14 /15 /13"/>
+  <moviedb:Movie rating="59.0" persons="/15 /14"/>
+  <moviedb:Movie rating="56.0" persons="/11 /12 /13"/>
+  <moviedb:Movie rating="57.0" persons="/13 /14 /12"/>
+</xmi:XMI>
