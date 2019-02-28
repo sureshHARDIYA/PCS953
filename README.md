@@ -12,13 +12,13 @@ I would like all of you to have a look at this paper https://link.springer.com/a
 
 You can work in groups of up to 2 students, or work alone if you prefer so. Mixture of master+phd students is encouraged. 
 
-*Requirements:*
+**Requirements:**
 
 - Each group will get a time slot of approximately 20 minutes on Tuesday 5th March to demonstrate and present the results.
 - We also expect a short report (2-3 pages) on the solution submitted to Canvas. Explain clearly which case you have chosen, from which year, and which approach you have chosen to solve the case.
 - The report must include a link to the source code of your solution on a git repository. NB! You can skip this in case you have chosen a theoretical exercise on making an overview of previous solutions.
 - The presentation slides of the demo should be submitted to Canvas latest on Tuesday 5th March.
  
- * Submitted By *
+ **Submitted By**
  - [Suresh Kumar Mukhiya](https://github.com/sureshHARDIYA)
  - [Tam Thanh Truong](https://github.com/tamttruong)
