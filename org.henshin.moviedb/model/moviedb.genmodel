@@ -36,5 +36,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Movie/type"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference moviedb.ecore#//Movie/persons"/>
     </genClasses>
+    <genClasses ecoreClass="moviedb.ecore#//Temporary">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Temporary/tempInt"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

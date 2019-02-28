@@ -7,9 +7,9 @@
     <semanticResources>../task1/generate.henshin_diagram</semanticResources>
     <semanticResources>../task1/example-person.xmi</semanticResources>
     <semanticResources>../task1/example-movie.xmi</semanticResources>
-    <semanticResources>generate.henshin</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
     <semanticResources>generate.henshin_diagram</semanticResources>
+    <semanticResources>generate.henshin</semanticResources>
     <semanticResources>Couple_transformed.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_lH2R8DqbEem3n_IfP-4SBA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
@@ -132,6 +132,19 @@
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_XcvK0TqxEemM4I4kftsaiA" fontName="Segoe UI" fontHeight="8"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XcvK0jqxEemM4I4kftsaiA" x="230" y="280"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_OyDiUDtkEemsLZ2olwIq_w" type="2003" element="_OfUzkDtkEemsLZ2olwIq_w">
+          <children xmi:type="notation:Node" xmi:id="_OyHMsDtkEemsLZ2olwIq_w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_OyIa0DtkEemsLZ2olwIq_w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_VhoYsDtkEemsLZ2olwIq_w" type="3010" element="_VhWE0DtkEemsLZ2olwIq_w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_VhoYsTtkEemsLZ2olwIq_w" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_VhoYsjtkEemsLZ2olwIq_w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_OyIa0TtkEemsLZ2olwIq_w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_OyIa0jtkEemsLZ2olwIq_w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_OyDiUTtkEemsLZ2olwIq_w" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OyDiUjtkEemsLZ2olwIq_w" x="575" y="28" width="120" height="48"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_lRYocjqbEem3n_IfP-4SBA"/>
         <edges xmi:type="notation:Edge" xmi:id="_hawFYDqsEem57tuHi_bKdw" type="4001" element="_ham7cDqsEem57tuHi_bKdw" source="_R8uRIDqsEem57tuHi_bKdw" target="_01fcQDqrEem57tuHi_bKdw">
@@ -488,6 +501,25 @@
         </endLabelStyle>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_OfUzkDtkEemsLZ2olwIq_w" name="Temporary" tooltipText="" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="moviedb.ecore#//Temporary"/>
+      <semanticElements xmi:type="ecore:EClass" href="moviedb.ecore#//Temporary"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_XiF0kDtkEemsLZ2olwIq_w" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_VhWE0DtkEemsLZ2olwIq_w" name="tempInt : EInt" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="moviedb.ecore#//Temporary/tempInt"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="moviedb.ecore#//Temporary/tempInt"/>
+        <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_XiHpwDtkEemsLZ2olwIq_w" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_lRHitDqbEem3n_IfP-4SBA"/>
