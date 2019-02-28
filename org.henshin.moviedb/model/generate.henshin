@@ -246,7 +246,7 @@
     <parameterMappings xmi:id="_fs2AwztqEem9TJ0QZxtLlg" source="_9W7ycDtnEem9TJ0QZxtLlg" target="_PDCV4DtqEem9TJ0QZxtLlg"/>
   </units>
   <units xsi:type="henshin:IteratedUnit" xmi:id="_TgJl8DtgEemsLZ2olwIq_w" name="createExample" subUnit="_IzzbcDrFEemXIuj1GFitCQ" iterations="N">
-    <parameters xmi:id="_dgoW8DthEemsLZ2olwIq_w" name="n" description="" kind="IN">
+    <parameters xmi:id="_dgoW8DthEemsLZ2olwIq_w" name="n" description="" kind="INOUT">
       <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     </parameters>
     <parameters xmi:id="_ke0GgDtgEemsLZ2olwIq_w" name="N" kind="IN">
