@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_CK_N8DuBEemNAPFzsHbyTQ">
+  <imports href="moviedb.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_e9mdsDuBEemNAPFzsHbyTQ" name="createCouple">
+    <parameters xmi:id="_ttMMsDuDEem3t6u1Ckwpzg" name="x" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_ttMzwDuDEem3t6u1Ckwpzg" name="y" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_e91uQDuBEemNAPFzsHbyTQ" name="Lhs"/>
+    <rhs xmi:id="_fAeykDuBEemNAPFzsHbyTQ" name="Rhs"/>
+    <attributeConditions xmi:id="_HdOrwDwSEemysLLz0gyk0A" name="noSymmetry" description="x.compareTo(y) &lt; 0" conditionText="x.compareTo(y) &lt; 0"/>
+    <multiRules xmi:id="_Jb8SEDuMEemSWpn6KrDebQ">
+      <parameters xmi:id="_JcHRMDuMEemSWpn6KrDebQ" name="x" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </parameters>
+      <parameters xmi:id="_JcHRMTuMEemSWpn6KrDebQ" name="y" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </parameters>
+      <lhs xmi:id="_Jb_VYDuMEemSWpn6KrDebQ" name="Lhs">
+        <nodes xmi:id="_VjbXYDuDEem3t6u1Ckwpzg">
+          <type href="moviedb.ecore#//Person"/>
+          <attributes xmi:id="_m1ofADuDEem3t6u1Ckwpzg" value="x">
+            <type href="moviedb.ecore#//Person/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_Vr-2cDuDEem3t6u1Ckwpzg">
+          <type href="moviedb.ecore#//Person"/>
+          <attributes xmi:id="_oAUJcDuDEem3t6u1Ckwpzg" value="y">
+            <type href="moviedb.ecore#//Person/name"/>
+          </attributes>
+        </nodes>
+        <formula xsi:type="henshin:And" xmi:id="_DDncoDwREemWd-lTnr3frw">
+          <left xsi:type="henshin:NestedCondition" xmi:id="_REUYsDuMEemSWpn6KrDebQ">
+            <conclusion xmi:id="_REUYsTuMEemSWpn6KrDebQ">
+              <nodes xmi:id="_REVm0DuMEemSWpn6KrDebQ" outgoing="_c_5I8DuDEem3t6u1Ckwpzg _dPUFADuDEem3t6u1Ckwpzg _dcJnIDuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person"/>
+              </nodes>
+              <nodes xmi:id="_REVm0juMEemSWpn6KrDebQ" outgoing="_d_dIgDuDEem3t6u1Ckwpzg _dxV0ADuDEem3t6u1Ckwpzg _dmNiEDuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person"/>
+              </nodes>
+              <nodes xmi:id="_YXL4cDuDEem3t6u1Ckwpzg" incoming="_c_5I8DuDEem3t6u1Ckwpzg _d_dIgDuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Movie"/>
+              </nodes>
+              <nodes xmi:id="_Yd0r8DuDEem3t6u1Ckwpzg" incoming="_dxV0ADuDEem3t6u1Ckwpzg _dPUFADuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Movie"/>
+              </nodes>
+              <nodes xmi:id="_YkZOADuDEem3t6u1Ckwpzg" incoming="_dcJnIDuDEem3t6u1Ckwpzg _dmNiEDuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Movie"/>
+              </nodes>
+              <edges xmi:id="_c_5I8DuDEem3t6u1Ckwpzg" source="_REVm0DuMEemSWpn6KrDebQ" target="_YXL4cDuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person/movies"/>
+              </edges>
+              <edges xmi:id="_d_dIgDuDEem3t6u1Ckwpzg" source="_REVm0juMEemSWpn6KrDebQ" target="_YXL4cDuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person/movies"/>
+              </edges>
+              <edges xmi:id="_dxV0ADuDEem3t6u1Ckwpzg" source="_REVm0juMEemSWpn6KrDebQ" target="_Yd0r8DuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person/movies"/>
+              </edges>
+              <edges xmi:id="_dPUFADuDEem3t6u1Ckwpzg" source="_REVm0DuMEemSWpn6KrDebQ" target="_Yd0r8DuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person/movies"/>
+              </edges>
+              <edges xmi:id="_dcJnIDuDEem3t6u1Ckwpzg" source="_REVm0DuMEemSWpn6KrDebQ" target="_YkZOADuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person/movies"/>
+              </edges>
+              <edges xmi:id="_dmNiEDuDEem3t6u1Ckwpzg" source="_REVm0juMEemSWpn6KrDebQ" target="_YkZOADuDEem3t6u1Ckwpzg">
+                <type href="moviedb.ecore#//Person/movies"/>
+              </edges>
+            </conclusion>
+            <mappings xmi:id="_REVm0TuMEemSWpn6KrDebQ" origin="_VjbXYDuDEem3t6u1Ckwpzg" image="_REVm0DuMEemSWpn6KrDebQ"/>
+            <mappings xmi:id="_REVm0zuMEemSWpn6KrDebQ" origin="_Vr-2cDuDEem3t6u1Ckwpzg" image="_REVm0juMEemSWpn6KrDebQ"/>
+          </left>
+          <right xsi:type="henshin:Not" xmi:id="_DDncoTwREemWd-lTnr3frw">
+            <child xsi:type="henshin:NestedCondition" xmi:id="_DDncojwREemWd-lTnr3frw">
+              <conclusion xmi:id="_DDncozwREemWd-lTnr3frw">
+                <nodes xmi:id="_DDoDsDwREemWd-lTnr3frw" incoming="_6wuZYDwQEemWd-lTnr3frw">
+                  <type href="moviedb.ecore#//Person"/>
+                  <attributes xmi:id="_DDoDsTwREemWd-lTnr3frw" value="x">
+                    <type href="moviedb.ecore#//Person/name"/>
+                  </attributes>
+                </nodes>
+                <nodes xmi:id="_5GcB0DwQEemWd-lTnr3frw" name="yx" outgoing="_50yVkDwQEemWd-lTnr3frw _6wuZYDwQEemWd-lTnr3frw">
+                  <type href="moviedb.ecore#//Couple"/>
+                </nodes>
+                <nodes xmi:id="_DDoDtjwREemWd-lTnr3frw" incoming="_50yVkDwQEemWd-lTnr3frw">
+                  <type href="moviedb.ecore#//Person"/>
+                  <attributes xmi:id="_DDoDtzwREemWd-lTnr3frw" value="y">
+                    <type href="moviedb.ecore#//Person/name"/>
+                  </attributes>
+                </nodes>
+                <edges xmi:id="_50yVkDwQEemWd-lTnr3frw" source="_5GcB0DwQEemWd-lTnr3frw" target="_DDoDtjwREemWd-lTnr3frw">
+                  <type href="moviedb.ecore#//Couple/p1"/>
+                </edges>
+                <edges xmi:id="_6wuZYDwQEemWd-lTnr3frw" source="_5GcB0DwQEemWd-lTnr3frw" target="_DDoDsDwREemWd-lTnr3frw">
+                  <type href="moviedb.ecore#//Couple/p2"/>
+                </edges>
+              </conclusion>
+              <mappings xmi:id="_DDoDsjwREemWd-lTnr3frw" origin="_VjbXYDuDEem3t6u1Ckwpzg" image="_DDoDsDwREemWd-lTnr3frw"/>
+              <mappings xmi:id="_DDoDuDwREemWd-lTnr3frw" origin="_Vr-2cDuDEem3t6u1Ckwpzg" image="_DDoDtjwREemWd-lTnr3frw"/>
+            </child>
+          </right>
+        </formula>
+      </lhs>
+      <rhs xmi:id="_Jb_VYTuMEemSWpn6KrDebQ" name="Rhs">
+        <nodes xmi:id="_VjbXYTuDEem3t6u1Ckwpzg" incoming="_W0_F4DuDEem3t6u1Ckwpzg">
+          <type href="moviedb.ecore#//Person"/>
+          <attributes xmi:id="_m1pGEDuDEem3t6u1Ckwpzg" value="x">
+            <type href="moviedb.ecore#//Person/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_R2i18DuDEem3t6u1Ckwpzg" name="xy" outgoing="_WhHusDuDEem3t6u1Ckwpzg _W0_F4DuDEem3t6u1Ckwpzg">
+          <type href="moviedb.ecore#//Couple"/>
+          <attributes xmi:id="_ha2poDuJEem9fdQK8cMUlg" value="x+y">
+            <type href="moviedb.ecore#//Group/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_Vr-2cTuDEem3t6u1Ckwpzg" incoming="_WhHusDuDEem3t6u1Ckwpzg">
+          <type href="moviedb.ecore#//Person"/>
+          <attributes xmi:id="_oAUwgDuDEem3t6u1Ckwpzg" value="y">
+            <type href="moviedb.ecore#//Person/name"/>
+          </attributes>
+        </nodes>
+        <edges xmi:id="_WhHusDuDEem3t6u1Ckwpzg" source="_R2i18DuDEem3t6u1Ckwpzg" target="_Vr-2cTuDEem3t6u1Ckwpzg">
+          <type href="moviedb.ecore#//Couple/p2"/>
+        </edges>
+        <edges xmi:id="_W0_F4DuDEem3t6u1Ckwpzg" source="_R2i18DuDEem3t6u1Ckwpzg" target="_VjbXYTuDEem3t6u1Ckwpzg">
+          <type href="moviedb.ecore#//Couple/p1"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_VjbXYjuDEem3t6u1Ckwpzg" origin="_VjbXYDuDEem3t6u1Ckwpzg" image="_VjbXYTuDEem3t6u1Ckwpzg"/>
+      <mappings xmi:id="_Vr_dgDuDEem3t6u1Ckwpzg" origin="_Vr-2cDuDEem3t6u1Ckwpzg" image="_Vr-2cTuDEem3t6u1Ckwpzg"/>
+    </multiRules>
+  </units>
+</henshin:Module>

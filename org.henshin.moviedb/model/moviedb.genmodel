@@ -28,6 +28,10 @@
     <genClasses ecoreClass="moviedb.ecore#//Actress"/>
     <genClasses ecoreClass="moviedb.ecore#//Group">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference moviedb.ecore#//Group/commonMovies"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Group/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Group/avgRating"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Group/totalRating"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Group/totalMovies"/>
     </genClasses>
     <genClasses ecoreClass="moviedb.ecore#//Movie">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute moviedb.ecore#//Movie/title"/>

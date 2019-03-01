@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_EUeMgDuNEemxhOcx4zdKkQ" name="">
+  <imports href="moviedb.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_E1lVgDuNEemxhOcx4zdKkQ" name="createOccurence">
+    <parameters xmi:id="_E1lVgTuNEemxhOcx4zdKkQ" name="r" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    </parameters>
+    <parameters xmi:id="_QSHz0DuZEemX7vHub7WqXA" name="x" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    </parameters>
+    <parameters xmi:id="_AgBDADwHEemHkIH_BOfpoQ" name="y" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_E1lVgjuNEemxhOcx4zdKkQ" name="Lhs"/>
+    <rhs xmi:id="_E1lVlDuNEemxhOcx4zdKkQ" name="Rhs"/>
+    <multiRules xmi:id="_cxODsDuXEemCh-mTGmJarg">
+      <parameters xmi:id="_cxRuEDuXEemCh-mTGmJarg" name="r" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </parameters>
+      <parameters xmi:id="_Vp6X4DuZEemX7vHub7WqXA" name="x" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </parameters>
+      <parameters xmi:id="_VlBt4TwHEemHkIH_BOfpoQ" name="y" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </parameters>
+      <lhs xmi:id="_cxODsTuXEemCh-mTGmJarg" name="Lhs">
+        <nodes xmi:id="_E1lVgzuNEemxhOcx4zdKkQ">
+          <type href="moviedb.ecore#//Couple"/>
+          <attributes xmi:id="_el5zUDwZEemysLLz0gyk0A" value="x">
+            <type href="moviedb.ecore#//Group/totalRating"/>
+          </attributes>
+          <attributes xmi:id="_hjaGQDwZEemysLLz0gyk0A" value="y">
+            <type href="moviedb.ecore#//Group/totalMovies"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_E1lVhTuNEemxhOcx4zdKkQ">
+          <type href="moviedb.ecore#//Movie"/>
+          <attributes xmi:id="_LCBkADwZEemysLLz0gyk0A" value="r">
+            <type href="moviedb.ecore#//Movie/rating"/>
+          </attributes>
+        </nodes>
+        <formula xsi:type="henshin:NestedCondition" xmi:id="_cxPR1TuXEemCh-mTGmJarg">
+          <conclusion xmi:id="_cxPR1juXEemCh-mTGmJarg">
+            <nodes xmi:id="_cxP44DuXEemCh-mTGmJarg" outgoing="_E1lVkDuNEemxhOcx4zdKkQ _E1lVkTuNEemxhOcx4zdKkQ">
+              <type href="moviedb.ecore#//Couple"/>
+              <attributes xmi:id="_el5zUjwZEemysLLz0gyk0A" value="x">
+                <type href="moviedb.ecore#//Group/totalRating"/>
+              </attributes>
+              <attributes xmi:id="_hjatUTwZEemysLLz0gyk0A" value="y">
+                <type href="moviedb.ecore#//Group/totalMovies"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_cxP44juXEemCh-mTGmJarg" incoming="_RpL_UDuXEemCh-mTGmJarg _RDlX4DuXEemCh-mTGmJarg">
+              <type href="moviedb.ecore#//Movie"/>
+            </nodes>
+            <nodes xmi:id="_E1lVjTuNEemxhOcx4zdKkQ" description="" incoming="_E1lVkDuNEemxhOcx4zdKkQ" outgoing="_RpL_UDuXEemCh-mTGmJarg">
+              <type href="moviedb.ecore#//Person"/>
+            </nodes>
+            <nodes xmi:id="_E1lVjDuNEemxhOcx4zdKkQ" incoming="_E1lVkTuNEemxhOcx4zdKkQ" outgoing="_RDlX4DuXEemCh-mTGmJarg">
+              <type href="moviedb.ecore#//Person"/>
+            </nodes>
+            <edges xmi:id="_E1lVkDuNEemxhOcx4zdKkQ" source="_cxP44DuXEemCh-mTGmJarg" target="_E1lVjTuNEemxhOcx4zdKkQ">
+              <type href="moviedb.ecore#//Couple/p1"/>
+            </edges>
+            <edges xmi:id="_RpL_UDuXEemCh-mTGmJarg" source="_E1lVjTuNEemxhOcx4zdKkQ" target="_cxP44juXEemCh-mTGmJarg">
+              <type href="moviedb.ecore#//Person/movies"/>
+            </edges>
+            <edges xmi:id="_E1lVkTuNEemxhOcx4zdKkQ" source="_cxP44DuXEemCh-mTGmJarg" target="_E1lVjDuNEemxhOcx4zdKkQ">
+              <type href="moviedb.ecore#//Couple/p2"/>
+            </edges>
+            <edges xmi:id="_RDlX4DuXEemCh-mTGmJarg" source="_E1lVjDuNEemxhOcx4zdKkQ" target="_cxP44juXEemCh-mTGmJarg">
+              <type href="moviedb.ecore#//Person/movies"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_cxP44TuXEemCh-mTGmJarg" origin="_E1lVgzuNEemxhOcx4zdKkQ" image="_cxP44DuXEemCh-mTGmJarg"/>
+          <mappings xmi:id="_cxP44zuXEemCh-mTGmJarg" origin="_E1lVhTuNEemxhOcx4zdKkQ" image="_cxP44juXEemCh-mTGmJarg"/>
+        </formula>
+      </lhs>
+      <rhs xmi:id="_cxOqwDuXEemCh-mTGmJarg" name="Rhs">
+        <nodes xmi:id="_E1lVlTuNEemxhOcx4zdKkQ" outgoing="_gAzIoDuYEemCh-mTGmJarg">
+          <type href="moviedb.ecore#//Couple"/>
+          <attributes xmi:id="_el5zUTwZEemysLLz0gyk0A" value="x+r">
+            <type href="moviedb.ecore#//Group/totalRating"/>
+          </attributes>
+          <attributes xmi:id="_hjatUDwZEemysLLz0gyk0A" value="y+1">
+            <type href="moviedb.ecore#//Group/totalMovies"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_E1lVlzuNEemxhOcx4zdKkQ" incoming="_gAzIoDuYEemCh-mTGmJarg">
+          <type href="moviedb.ecore#//Movie"/>
+          <attributes xmi:id="_LCDZMDwZEemysLLz0gyk0A" value="r">
+            <type href="moviedb.ecore#//Movie/rating"/>
+          </attributes>
+        </nodes>
+        <edges xmi:id="_gAzIoDuYEemCh-mTGmJarg" source="_E1lVlTuNEemxhOcx4zdKkQ" target="_E1lVlzuNEemxhOcx4zdKkQ">
+          <type href="moviedb.ecore#//Group/commonMovies"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_E1lVmzuNEemxhOcx4zdKkQ" origin="_E1lVhTuNEemxhOcx4zdKkQ" image="_E1lVlzuNEemxhOcx4zdKkQ"/>
+      <mappings xmi:id="_E1lVmjuNEemxhOcx4zdKkQ" origin="_E1lVgzuNEemxhOcx4zdKkQ" image="_E1lVlTuNEemxhOcx4zdKkQ"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_UkWUADwHEemHkIH_BOfpoQ" name="calculateAverage">
+    <parameters xmi:id="_y9m8ADwIEemV_rzjV4YGpA" name="r" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    </parameters>
+    <parameters xmi:id="_duR3gDwIEemV_rzjV4YGpA" name="x" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    </parameters>
+    <parameters xmi:id="_eHoLoDwIEemV_rzjV4YGpA" name="y" description="" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_UkcaoDwHEemHkIH_BOfpoQ" name="Lhs"/>
+    <rhs xmi:id="_UkmysDwHEemHkIH_BOfpoQ" name="Rhs"/>
+    <multiRules xmi:id="_SqFkwDwdEemWnvB3TLXLtQ">
+      <parameters xmi:id="_SqPVwDwdEemWnvB3TLXLtQ" name="r" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </parameters>
+      <parameters xmi:id="_SqPVwTwdEemWnvB3TLXLtQ" name="x" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      </parameters>
+      <parameters xmi:id="_SqPVwjwdEemWnvB3TLXLtQ" name="y" description="" kind="VAR">
+        <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </parameters>
+      <lhs xmi:id="_SqFkwTwdEemWnvB3TLXLtQ" name="Lhs">
+        <nodes xmi:id="_Rnuv4DwdEemWnvB3TLXLtQ">
+          <type href="moviedb.ecore#//Couple"/>
+          <attributes xmi:id="_UqIw8DwdEemWnvB3TLXLtQ" value="r">
+            <type href="moviedb.ecore#//Group/avgRating"/>
+          </attributes>
+          <attributes xmi:id="_VL1v0DwdEemWnvB3TLXLtQ" value="x">
+            <type href="moviedb.ecore#//Group/totalRating"/>
+          </attributes>
+          <attributes xmi:id="_WW_UUDwdEemWnvB3TLXLtQ" value="y">
+            <type href="moviedb.ecore#//Group/totalMovies"/>
+          </attributes>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_SqGL0DwdEemWnvB3TLXLtQ" name="Rhs">
+        <nodes xmi:id="_Rnv-ADwdEemWnvB3TLXLtQ">
+          <type href="moviedb.ecore#//Couple"/>
+          <attributes xmi:id="_UqJYADwdEemWnvB3TLXLtQ" value="x/y">
+            <type href="moviedb.ecore#//Group/avgRating"/>
+          </attributes>
+          <attributes xmi:id="_VL1v0TwdEemWnvB3TLXLtQ" value="x">
+            <type href="moviedb.ecore#//Group/totalRating"/>
+          </attributes>
+          <attributes xmi:id="_WW_UUTwdEemWnvB3TLXLtQ" value="y">
+            <type href="moviedb.ecore#//Group/totalMovies"/>
+          </attributes>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_RnwlEDwdEemWnvB3TLXLtQ" origin="_Rnuv4DwdEemWnvB3TLXLtQ" image="_Rnv-ADwdEemWnvB3TLXLtQ"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_BRlGADwLEemltpbyW3mjlQ" name="findAverages" subUnits="_E1lVgDuNEemxhOcx4zdKkQ _UkWUADwHEemHkIH_BOfpoQ"/>
+</henshin:Module>
